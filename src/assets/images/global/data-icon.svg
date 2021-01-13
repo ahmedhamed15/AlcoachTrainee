@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.7" height="15.4" viewBox="0 0 26.7 15.4">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="26.7" height="15.4" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_trend-up" clip-path="url(#clip-path)">
+    <path id="icon_trend-up-2" data-name="icon_trend-up" d="M15.1,7.667h6.122l-6.122,6.6-6.8-7.333L.3,15.55l2.381,2.567,5.612-6.05L15.1,19.4l8.5-9.167v6.6H27V4H15.1Z" transform="translate(-0.3 -4)" fill="#9ca5c6"/>
+  </g>
+</svg>

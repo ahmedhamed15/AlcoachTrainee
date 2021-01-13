@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="23" height="23" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_chat-room" clip-path="url(#clip-path)">
+    <path id="Union_11" data-name="Union 11" d="M14.375,18.688H7.188l2.628-2.876h8.872a1.438,1.438,0,0,0,1.437-1.437V5.751h1.437A1.437,1.437,0,0,1,23,7.188V17.249a1.439,1.439,0,0,1-1.437,1.439H18.688V23ZM4.312,12.937H1.437A1.438,1.438,0,0,1,0,11.5V1.437A1.438,1.438,0,0,1,1.437,0H15.812a1.438,1.438,0,0,1,1.437,1.437V11.5a1.437,1.437,0,0,1-1.437,1.437H8.625L4.312,17.249Z" transform="translate(0 0)" fill="#9ca5c6"/>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+/* All Variables */
+@import "../../../../../styles/helpers/variables";
+
+/* Extended Classes */
+@import "../../../../../styles/helpers/extended-classes";
+
+/* Global styles */
+@import "../../../../../styles/helpers/global-styles";
+
+/* Buttons */
+@import "../../../../../styles/components/buttons";
+
+.plans {
+  .today-plans {
+    div.row {
+      &:first-child {
+        .col.col-md-5 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .about-the-plan {
+      > div.row {
+        > .col-6 {
+          position: static;
+        }
+      }
+      .plan-info {
+        .plan-icon {
+          margin-bottom: 16px;
+          > img {
+            width: 27px;
+            height: auto;
+          }
+        }
+        .plan-title {
+          margin-bottom: 15px;
+          font: {
+            size: 12px;
+            weight: 600
+          }
+          a {
+            color: $titleLightColor;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              z-index: 99;
+            }
+          }
+        }
+        .plan-brief {
+          color: $alcoachMainLightColor;
+          margin-bottom: 0;
+          font: {
+            size: 11px;
+            weight: bold
+          }
+        }
+        .plan-count {
+          margin-bottom: 7px;
+          > span {
+            color: $alcoachMainColor;
+            font: {
+              size: 11px;
+              weight: bold
+            }
+          }
+        }
+        .plan-tags {
+          li {
+            display: inline-block;
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+            span {
+              &:not(:last-child) {
+                margin-right: 5px;
+              }
+              &.tag-label {
+                font: {
+                  size: 11px;
+                  weight: bold
+                }
+                color: $alcoachMainLightColor;
+                margin-bottom: 5px;
+                display: block;
+              }
+              &.tag-item {
+                font: {
+                  size: 12px;
+                  weight: 600
+                }
+                color: $alcoachMainColor;
+                background-image: $backgroundGredientColor;
+                padding: 3px 7px;
+                border-radius: 20px;
+              }
+            }
+          }
+        }
+      }
+      .plan-img {
+        > img {
+          max-height: 180px;
+          width: auto;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top the-main-navbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+  <div class="sidebar-header">
+    <button type="button" class="btn btn-light alcoach-dropdown change-main-sidebar-components active"> <!-- id="sidebarCollapse" -->
+      <img src="assets/images/global/main-logo.svg" alt="">
+      <i class="fa fa-sort-down"></i>
+    </button>
+  </div>
+
+
+
+
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="list-unstyled components main-navigation text-center">
+      <li class=""> <!-- active -->
+        <a routerLink="todayPlans" routerLinkActive="active-link">
+          <img src="assets/images/global/plans-icon.svg" alt="">
+          <p> Plans </p>
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <img src="assets/images/global/data-icon.svg" alt="">
+          <p> Data </p>
+        </a>
+      </li>
+    </ul>
+
+
+    <div class="navbar-nav ml-auto">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+          <img src="assets/images/global/messages-icons.svg" alt="">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="alcoach-main-dropdown">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div>
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+          <img src="assets/images/global/Notification Icon.svg" alt="">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="alcoach-main-dropdown">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div>
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+          <img src="assets/images/global/cart-icon.svg" alt="">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="alcoach-main-dropdown">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div>
+      <div ngbDropdown class="d-inline-block profile-info-dropdown">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+          <img src="assets/images/global/trainee-thumbnail.jpg" alt="">
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="alcoach-main-dropdown">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

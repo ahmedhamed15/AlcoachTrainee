@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3502" data-name="Rectangle 3502" width="22" height="22" fill="#9ca5c6"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_12" data-name="Artboard – 12" clip-path="url(#clip-path)">
+    <g id="Purchase">
+      <rect id="rectangle" width="22" height="22" fill="none"/>
+      <path id="path" d="M7.662,17.1A1.876,1.876,0,1,0,9,17.647,1.887,1.887,0,0,0,7.662,17.1m9.437,0a1.876,1.876,0,1,0,1.338.549A1.887,1.887,0,0,0,17.1,17.1M3.887,2H2V3.887H3.888l3.394,7.16L6,13.36a1.889,1.889,0,0,0,1.661,2.795H18.986V14.267H8.061a.235.235,0,0,1-.235-.236l.029-.114L8.7,12.379H15.73a1.89,1.89,0,0,0,1.651-.97l3.376-6.127a.925.925,0,0,0,.125-.455.944.944,0,0,0-.944-.944H5.975l-.383-.805A1.884,1.884,0,0,0,3.887,2" transform="translate(-0.112 -0.113)" fill="#9ca5c6" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

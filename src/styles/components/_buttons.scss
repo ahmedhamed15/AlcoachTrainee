@@ -1,0 +1,55 @@
+/* All Variables */
+@import "../../styles/helpers/variables";
+
+/* Extended Classes */
+@import "../../styles/helpers/extended-classes";
+
+/* Edit button */
+.custom-edit-button {
+  background-color: $mainBlackColor;
+  color: $alcoachMainColor !important;
+  font: {
+    size: 20px;
+    weight: bold
+  }
+  display: inline-block;
+  width: 140px !important;
+  height: 70px !important;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Main button */
+.main-button {
+  background-image: $backgroundMainButton;
+  border-radius: 8px;
+}
+
+/* Normal Button */
+.normal-button {
+  background: $alcoachMainLightColor !important;
+}
+
+/* Danger Meal */
+.danger-button {
+  background: $dangerColor !important;
+}
+
+.main-button,
+.normal-button,
+.danger-button {
+  font: {
+    size: 15px;
+    weight: bold !important
+  }
+  color: $whiteColor !important;
+  text-align: center;
+  border: none !important;
+  height: 35px;
+  @extend .trans-effect;
+  &:hover {
+    box-shadow: 0px 5px 3px -4px #8b8a8a;
+  }
+}
+

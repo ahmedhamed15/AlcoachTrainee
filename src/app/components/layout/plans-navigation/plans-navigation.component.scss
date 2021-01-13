@@ -1,0 +1,42 @@
+/* All Variables */
+@import "../../../../styles/helpers/variables";
+
+/* Extended Classes */
+@import "../../../../styles/helpers/extended-classes";
+
+/* Global styles */
+@import "../../../../styles/helpers/global-styles";
+
+/* Plans tabs */
+.tabs-of-plans {
+  margin-bottom: 40px;
+  > ul {
+    display: inline-block;
+    padding: 5px 0;
+    border-radius: 6px;
+    background-color: $alcoachMainLightColor;
+    li {
+      display: inline-block;
+      padding: 0 5px;
+      width: 180px;
+      > a {
+        color: $whiteColor;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 6px;
+        width: 100%;
+        display: inline-block;
+        @extend .trans-effect;
+        font: {
+          size: 14px;
+          weight: bold
+        }
+        &.active-link,
+        &:hover {
+          background-color: $mainBlackColor;
+          color: $alcoachMainColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+/* All Variables */
+@import "../../../../../../styles/helpers/variables";
+
+/* Global styles */
+@import "../../../../../../styles/helpers/global-styles";
+
+/* Extended Classes */
+@import "../../../../../../styles/helpers/extended-classes";
+
+
+.supplements-plan {
+  .supplement-col {
+    margin-bottom: 30px;
+    .supplement-row {
+      height: 100%;
+    }
+    .supplement-img {
+      border-radius: 4px;
+      background-color: $alcoachMainLightColor;
+      padding: 10px;
+      height: 100%;
+      display: flex;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .supplement-main-info-parent {
+      border-right: 0.5px solid $generalLabelColor;
+      .supplement-main-info {
+        .supplement-title {
+          color: $titleLightColor;
+          font: {
+            size: 19px;
+            weight: 500
+          }
+          margin-bottom: 35px;
+        }
+        .supplement-details {
+          span {
+            font: {
+              size: 15px;
+              weight: bold
+            }
+            &.general-label {
+              margin-right: 25px;
+            }
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 35px;
+          }
+        }
+      }
+    }
+    .supplement-components {
+      > h5 {
+        color: $titleLightColor;
+        margin-bottom: 30px;
+        padding-left: 1.5rem;
+        font: {
+          size: 14px;
+          weight: bold;
+        }
+      }
+      .supplement-components-values {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+          flex: 0 0 50%;
+          max-width: 50%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          &:nth-child(3),
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+          span {
+            &.general-label {
+              font: {
+                size: 11px;
+                weight: bold;
+              }
+              margin-bottom: 4px;
+            }
+            &.general-value-label {
+              font: {
+                size: 13px;
+                weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+    .supplement-options {
+      > h2 {
+        color: $titleLightColor;
+        font: {
+          size: 24px;
+          weight: 500
+        }
+        margin-bottom: 25px;
+        margin-top: -4px;
+      }
+      .options-buttons {
+        width: 80%;
+        margin: auto;
+        .done-button-warrper {
+          > .main-button {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+        }
+        .other-options {
+          > .normal-button {
+            width: calc(50% - 5px);
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

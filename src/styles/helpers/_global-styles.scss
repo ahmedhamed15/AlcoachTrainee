@@ -1,0 +1,128 @@
+/* All Variables */
+@import "./variables";
+
+/* All Dropdown list */
+.alcoach-main-dropdown {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px #ababab;
+  border-top: 4px solid $alcoachMainColor;
+  z-index: 99999;
+  &:after {
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid $alcoachMainColor;
+    top: -15px;
+    left: 5px;
+  }
+  > button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @extend .trans-effect;
+    &:hover {
+      padding-left: 26px;
+    }
+  }
+}
+
+/* Plan box */
+.about-the-plan {
+  background-color: $mainBlackColor;
+  border-radius: 25px;
+  padding: 18px 35px;
+  box-shadow: 1px 3px 14px rgba(0, 0, 0, 0.4);
+  position: relative;
+  height: 100%;
+  @extend .trans-effect;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+/* Hide underline from the anchors */
+a {
+  text-decoration: none;
+}
+
+/* Finished label */
+.finished-label {
+  font: {
+    size: 12px !important;
+    weight: bold !important;
+  }
+  color: $blackColor;
+  text-align: center;
+  background-color: $warningColor;
+  border-radius: 4px 4px 0 0;
+  height: 20px;
+  line-height: 20px;
+}
+
+/* Off label */
+.off-label {
+  color: $warningColor !important;
+  font: {
+    size: 15px !important;
+    weight: 600 !important
+  }
+}
+
+/* General label */
+.general-label {
+  color: $generalLabelColor;
+  font-weight: 500;
+}
+.general-value-label {
+  color: $titleLightColor;
+  font-weight: 500;
+}
+.general-label-value-blue {
+  color: $alcoachMainColor;
+  font-weight: 500;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $alcoachMainColor;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $alcoachMainColor;
+  opacity: 0.8;
+}
+
+/* Absolute icon */
+.absolute-icon {
+  position: absolute;
+  right: 7px;
+  top: 0;
+}
+
+
+.rounded-label {
+  border: none;
+  box-shadow: none;
+  border-radius: 20px;
+  background-color: $mainBlackColor;
+  font: {
+    size: 14px;
+    weight: 400
+  }
+  padding: 5px 20px;
+  color: $alcoachMainColor;
+}

@@ -1,0 +1,150 @@
+/* All Variables */
+@import "../../../../../../styles/helpers/variables";
+
+/* Extended Classes */
+@import "../../../../../../styles/helpers/extended-classes";
+
+/* Global styles */
+@import "../../../../../../styles/helpers/global-styles";
+
+.today-plans-workout {
+  .main-video {
+    margin-bottom: 45px;
+    .video-js {
+      width: 100%;
+      min-height: 450px;
+      border-radius: 20px;
+      box-shadow: 0px 28px 25px -20px #171717;
+      video {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+  .video-info {
+    table {
+      .heading-of-table {
+        th {
+          font: {
+            size: 14px;
+            weight: 500
+          }
+          color: $whiteColor;
+        }
+      }
+      tbody {
+        .rounded-label {
+          min-width: 100px;
+          &.no-of-rows {
+            min-width: 50px;
+            padding: 5px 10px;
+          }
+        }
+        .btn-outline-primary.dropdown-toggle {
+          background-color: $mainBlackColor;
+          text-align: left;
+        }
+      }
+    }
+    .video-info-options {
+      padding-top: 55px;
+      button {
+        width: 150px;
+        border-radius: 20px;
+        line-height: 21px;
+        span {
+          font: {
+            size: 12px;
+            weight: 400
+          }
+        }
+      }
+      .normal-button {
+        i, svg {
+          margin-right: 10px;
+          font-size: 12px;
+        }
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .library-of-exercise {
+    .exercise-video {
+      background-color: $mainBlackColor;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      position: relative;
+      box-shadow: 0 10px 13px -8px #1d1d1d;
+      margin-left: 10px;
+      margin-right: 10px;
+      overflow: hidden;
+      img {
+        width: 115px;
+        height: 115px;
+        object-fit: cover;
+      }
+      >.row {
+        >div.col-8 {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .exercise-info {
+        >h5 {
+          font: {
+            size: 12px;
+            weight: 400;
+          }
+          margin: 15px 0;
+          padding-left: 10px;
+        }
+        >ul {
+          margin: 0;
+          padding-left: 10px;
+          > li {
+            display: inline-block;
+            &:not(:last-child) {
+              margin-right: 30px;
+            }
+            span {
+              font-size: 11px;
+            }
+            .general-label {
+              margin-right: 8px;
+            }
+          }
+        }
+        .video-duration {
+          position: absolute;
+          top: 30%;
+          right: 30px;
+          font: {
+            size: 14px;
+            weight: bold
+          }
+        }
+      }
+    }
+    .set-exercises {
+      background-color: rgba(247, 247, 247, 0.3);
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 20px;
+      > h5 {
+        font: {
+          size: 15px;
+          weight: bold
+        }
+        margin-bottom: 10px;
+      }
+      .exercise-video {
+        margin-left: 0;
+        margin-right: 0;
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

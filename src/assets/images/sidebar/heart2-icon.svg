@@ -1,0 +1,14 @@
+<svg id="Artboard_20" data-name="Artboard – 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3503" data-name="Rectangle 3503" width="18" height="18"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2268fb"/>
+      <stop offset="1" stop-color="#30dde5"/>
+    </linearGradient>
+  </defs>
+  <g id="Artboard_20-2" data-name="Artboard – 20" clip-path="url(#clip-path)">
+    <path id="Heart" d="M16.4,1.447a4.781,4.781,0,0,0-6.805,0l-.669.669-.669-.669a4.814,4.814,0,1,0-6.81,6.806l7.475,7.475,1.339-1.339L16.4,8.253a4.781,4.781,0,0,0,0-6.805" transform="translate(-0.025 0.975)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

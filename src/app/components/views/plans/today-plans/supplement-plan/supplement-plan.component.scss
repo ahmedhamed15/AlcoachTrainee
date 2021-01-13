@@ -1,0 +1,153 @@
+/* All Variables */
+@import "../../../../../../styles/helpers/variables";
+
+/* Global styles */
+@import "../../../../../../styles/helpers/global-styles";
+
+/* Extended Classes */
+@import "../../../../../../styles/helpers/extended-classes";
+
+.diet-plan-section {
+  .about-the-plan {
+    height: auto;
+  }
+  .diet-meal-img {
+    > img {
+      border-radius: 6px;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  .diet-meal-info {
+    padding-left: 50px;
+    > h4 {
+      font: {
+        size: 17px;
+        weight: 500;
+      }
+      color: $titleLightColor;
+      margin-bottom: 25px;
+      margin-top: 20px;
+    }
+    .main-meal-elements {
+      > .meal-item {
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .item-title-of-meal {
+          display: inline-block;
+          height: 40px;
+          width: 170px;
+          border-radius: 30px;
+          padding: 5px 20px;
+          background-image: $backgroundGredientColorReverse;
+          margin-right: 20px;
+          line-height: 30px;
+          font: {
+            size: 12px;
+            weight: bold;
+          }
+          > button {
+            background: none;
+            border: none;
+            padding: 0;
+            &:hover, &:focus,  &:active {
+              box-shadow: none;
+              border: none;
+              outline: none;
+            }
+          }
+        }
+        .item-gram {
+          color: $alcoachMainColor;
+          font: {
+            size: 12px;
+            weight: 500
+          }
+        }
+      }
+    }
+  }
+  .diet-meal-options {
+    margin: 20px 0 30px;
+    .meal-btns {
+      > button {
+        width: calc(50% - 10px);
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .diet-meal-components {
+    > h4 {
+      font: {
+        size: 15px;
+        weight: 500
+      }
+      margin-bottom: 17px;
+      color: $generalLabelColor;
+    }
+    .meal-details {
+      clear: both;
+      > h5 {
+        font: {
+         size: 12px;
+         weight: bold
+        }
+        color: $alcoachMainColor;
+        margin-bottom: 7px;
+      }
+      > ul {
+        li {
+          display: inline-block;
+          width: calc(33.333% - 10px);
+          margin-right: 15px;
+          display: inline-flex;
+          flex-direction: column;
+          margin-bottom: 10px;
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+          > span {
+            &.general-label {
+              font: {
+                size: 10px;
+                weight: bold
+               }
+               margin-bottom: 3px;
+            }
+            &.general-value-label {
+              font: {
+                size: 12px;
+                weight: 500
+               }
+            }
+          }
+        }
+      }
+    }
+    hr {
+      background: $alcoachMainLightColor;
+      width: 80%;
+      float: left;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+  }
+  .component-with-border-right {
+    position: relative;
+    &:after {
+      content: "";
+      height: 80%;
+      width: 0.5px;
+      background-color: $alcoachMainLightColor;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

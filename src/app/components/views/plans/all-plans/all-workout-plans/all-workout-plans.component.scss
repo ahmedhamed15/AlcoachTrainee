@@ -1,0 +1,148 @@
+/* All Variables */
+@import "../../../../../../styles/helpers/variables";
+
+/* Extended Classes */
+@import "../../../../../../styles/helpers/extended-classes";
+
+/* Global styles */
+@import "../../../../../../styles/helpers/global-styles";
+
+.today-plans-workout {
+  .main-video {
+    margin-bottom: 45px;
+    .video-js {
+      width: 100%;
+      min-height: 450px;
+      border-radius: 20px;
+      box-shadow: 0px 28px 25px -20px #171717;
+      video {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+  .video-info {
+    > .video-title {
+      color: $titleLightColor;
+      font: {
+        size: 20px;
+        weight: 500
+      }
+      margin-bottom: 30px;
+    }
+    > .date-and-exercises,
+    > ul.sub-info li {
+      margin-bottom: 30px;
+      >span {
+        font: {
+          size: 15px;
+          weight: bold
+        }
+      }
+      > .general-label {
+        color: $titleLightColor;
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+    > ul.sub-info {
+      li {
+        display: inline-block;
+        margin: 0;
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+  .library-of-exercise {
+    .exercise-video {
+      background-color: $mainBlackColor;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      position: relative;
+      box-shadow: 0 10px 13px -8px #1d1d1d;
+      margin-left: 10px;
+      margin-right: 10px;
+      overflow: hidden;
+      .with-player-icon {
+        position: relative;
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:before {
+          background: url("../../../../../../assets/images/global/play-icon.svg") no-repeat center center;
+          width: 23px;
+          height: 23px;
+        }
+        &:after {
+          background: url("../../../../../../assets/images/global/white-circle.svg") no-repeat center center;
+          width: 74px;
+          height: 74px;
+        }
+      }
+      img {
+        width: 115px;
+        height: 115px;
+        object-fit: cover;
+      }
+      >.row {
+        >div.col-8 {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .exercise-info {
+        >h3 {
+          font: {
+            size: 16px;
+            weight: bold;
+          }
+          margin: 5px 0 15px;
+          padding-left: 10px;
+          color: $titleLightColor;
+        }
+        >h5 {
+          font: {
+            size: 12px;
+            weight: 400;
+          }
+          margin: 15px 0;
+          padding-left: 10px;
+          color: $alcoachMainColor;
+        }
+        >ul {
+          margin: 0;
+          padding-left: 10px;
+          > li {
+            display: inline-block;
+            &:not(:last-child) {
+              margin-right: 30px;
+            }
+            span {
+              font-size: 11px;
+            }
+            .general-label {
+              margin-right: 8px;
+            }
+          }
+        }
+        .video-duration {
+          position: absolute;
+          top: 30%;
+          right: 30px;
+          font: {
+            size: 14px;
+            weight: bold
+          }
+        }
+      }
+    }
+  }
+}

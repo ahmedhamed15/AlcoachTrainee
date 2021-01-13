@@ -1,0 +1,94 @@
+/* All Variables */
+@import "../../../../../styles/helpers/variables";
+
+/* Global styles */
+@import "../../../../../styles/helpers/global-styles";
+
+/* Extended Classes */
+@import "../../../../../styles/helpers/extended-classes";
+
+.all-plans {
+  .main-heading {
+    > a {
+      font: {
+        size: 14px;
+        weight: 500
+      }
+      color: $titleLightColor;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+      }
+    }
+    margin-bottom: 14px;
+  }
+  .main-box-of-all-plan {
+    margin-bottom: 80px;
+  }
+  .about-the-plan {
+    >.row, > .row >div {
+      height: 100%;
+    }
+    > .row {
+      >div{
+        &:last-child {
+        display: flex;
+        align-items: center;
+        }
+      }
+    }
+    .circle {
+      font: {
+        size: 13px;
+        weight: bold
+      }
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .circle-progress-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        strong {
+          display: block;
+        }
+      }
+    }
+    .some-of-plan-info {
+      margin: 0;
+      > li {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        .general-label {
+          font: {
+            size: 16px;
+            weight: bold
+          }
+          margin-right: 9px;
+        }
+        .general-value-label {
+          font: {
+            size: 14px;
+            weight: bold
+          }
+        }
+      }
+    }
+    .absolute-icon {
+      width: 30px;
+      height: auto;
+      > img {
+        width: 100%
+      }
+    }
+  }
+}

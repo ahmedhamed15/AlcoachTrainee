@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2268fb"/>
+      <stop offset="1" stop-color="#30dde5"/>
+    </linearGradient>
+  </defs>
+  <g id="Notification_Badge" data-name="Notification Badge" transform="translate(2 2)" stroke="#fff" stroke-width="2" fill="url(#linear-gradient)">
+    <circle cx="4" cy="4" r="4" stroke="none"/>
+    <circle cx="4" cy="4" r="5" fill="none"/>
+  </g>
+</svg>

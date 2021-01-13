@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.963" height="15.712" viewBox="0 0 35.963 15.712">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2268fb"/>
+      <stop offset="1" stop-color="#30dde5"/>
+    </linearGradient>
+  </defs>
+  <g id="Component_31" data-name="Component 31" transform="translate(0 0)">
+    <g id="Group_213" data-name="Group 213">
+      <path id="Path_371" data-name="Path 371" d="M50.859,70.428h.895v3.928h-.895a.786.786,0,0,1-.786-.786V71.213A.785.785,0,0,1,50.859,70.428Z" transform="translate(-50.073 -64.536)" fill="url(#linear-gradient)"/>
+      <path id="Path_372" data-name="Path 372" d="M85.383,70.428h-.895v3.928h.895a.91.91,0,0,0,.139-.012.787.787,0,0,0,.647-.774V71.213A.785.785,0,0,0,85.383,70.428Z" transform="translate(-50.206 -64.536)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_1593" data-name="Rectangle 1593" width="13.218" height="3.928" transform="translate(11.372 5.892)" fill="url(#linear-gradient)"/>
+      <path id="Path_373" data-name="Path 373" d="M82.937,66.386H80.752a.76.76,0,0,0-.549.228V78.143a.785.785,0,0,0,.549.224h2.186a.786.786,0,0,0,.786-.786V67.172A.786.786,0,0,0,82.937,66.386Z" transform="translate(-50.189 -64.52)" fill="url(#linear-gradient)"/>
+      <path id="Path_374" data-name="Path 374" d="M78.652,64.513H76.295a.786.786,0,0,0-.687.405h0a.791.791,0,0,0-.1.38v14.14a.787.787,0,0,0,.786.786h2.357a.787.787,0,0,0,.786-.786V65.3A.786.786,0,0,0,78.652,64.513Z" transform="translate(-50.171 -64.513)" fill="url(#linear-gradient)"/>
+      <path id="Path_375" data-name="Path 375" d="M53.3,66.386a.785.785,0,0,0-.454.144h0a.739.739,0,0,0-.112.1.783.783,0,0,0-.218.543V77.581a.8.8,0,0,0,.047.269.787.787,0,0,0,.739.517h2.185a.778.778,0,0,0,.549-.225V66.611a.782.782,0,0,0-.549-.225Z" transform="translate(-50.082 -64.52)" fill="url(#linear-gradient)"/>
+      <path id="Path_376" data-name="Path 376" d="M59.937,64.513H57.581a.785.785,0,0,0-.676.387h0a.786.786,0,0,0-.109.4v14.14a.786.786,0,0,0,.785.786h2.356a.786.786,0,0,0,.786-.786V65.3A.786.786,0,0,0,59.937,64.513Z" transform="translate(-50.099 -64.513)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

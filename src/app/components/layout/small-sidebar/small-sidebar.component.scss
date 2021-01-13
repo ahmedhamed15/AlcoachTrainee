@@ -1,0 +1,357 @@
+/* All Variables */
+@import "../../../../styles/helpers/variables";
+
+/* Extended Classes */
+@import "../../../../styles/helpers/extended-classes";
+
+/* Global styles */
+@import "../../../../styles/helpers/global-styles";
+
+/* Buttons */
+@import "../../../../styles/components/buttons";
+
+#small-sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 9999;
+  background: #131725;
+  color: #fff;
+  transition: all 0.3s;
+}
+#small-sidebar.active {
+  margin-right: -125px;
+}
+
+#small-sidebar .sidebar-header {
+  padding: 20px;
+  background:#131725;
+}
+
+#small-sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#small-sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#small-sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#small-sidebar ul li a:hover {
+  color: #131725;
+  background: #fff;
+}
+
+#small-sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #131725;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #131725;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #131725;
+}
+
+a.article,
+a.article:hover {
+  background: #131725 !important;
+  color: #fff !important;
+}
+@media (max-width: 768px) {
+  #small-sidebar {
+      margin-right: -125px;
+  }
+  #small-sidebar.active {
+      margin-right: 0;
+  }
+  #small-sidebarCollapse span {
+      display: none;
+  }
+}
+
+// ---------------------------------------- //
+
+#small-sidebar {
+  padding-top: 75px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 250px;
+    background-image: linear-gradient($mainBlackColor 70%, transparent);
+    z-index: 9999;
+  }
+  .alcoach-main-dropdown {
+    &:after {
+      left: 28px;
+    }
+  }
+  .plans-dropdown {
+    position: relative;
+    .plans-dropdown-heading {
+      background-color: #313A5B;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border-radius: 6px;
+      color: $alcoachMainColor;
+      width: 150px;
+      height: 40px;
+      position: relative;
+      z-index: 999;
+      font: {
+        size: 15px;
+        weight: 500
+      }
+      + .plans-list-dropdown {
+        width: 150px;
+        background-color: rgba($whiteColor, 0.7);
+        border-radius: 6px;
+        padding: 15px;
+        margin: auto;
+        position: absolute;
+        top: -200px;
+        left: 50%;
+        z-index: 99;
+        transform: translateX(-50%);
+        transition: all 0.5s ease-in-out;
+        &.active {
+          top: 32px;
+        }
+        li {
+          &:first-child {
+            button {
+              border-bottom: 1px solid #DDD;
+            }
+          }
+        }
+        button {
+          background: none;
+          border: none;
+          width: 100%;
+          border-radius: 0;
+          font-weight: 500;
+          &:focus, &:active {
+            border: none;
+            box-shadow: none;
+            outline: none;
+          }
+        }
+        .all-plans-item {
+
+        }
+        .today-plans-item {
+
+        }
+      }
+    }
+  }
+  .toggle-plans-sections {
+    width: 100%;
+    height: calc(100% + 250px);
+    position: relative;
+    margin-top: 30px;
+    > div {
+      position: absolute;
+      right: -300%;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      @extend .trans-effect;
+      overflow: hidden;
+      &.active {
+        right: 0;
+        left: 0;
+        @extend .trans-effect;
+      }
+    }
+  }
+  .main-heading {
+    padding-left: 20px;
+    > a {
+      font: {
+        size: 14px;
+        weight: 500
+      }
+      color: $titleLightColor;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+      }
+    }
+    margin-bottom: 14px;
+  }
+  .main-box-of-all-plan {
+    position: relative;
+    .about-the-plan {
+      padding: 0 22px;
+      background: no-repeat;
+      box-shadow: none;
+      >.row, > .row >div {
+        height: 100%;
+      }
+      > .row {
+        >div{
+          padding: 0;
+          &:last-child {
+          display: flex;
+          align-items: center;
+          }
+        }
+      }
+      .circle {
+        font: {
+          size: 9px;
+          weight: 500
+        }
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        padding-bottom: 0;
+        padding-top: 37px;
+        .circle-progress-info {
+          position: absolute;
+          top: 50%;
+          left: calc(50% - 17px);
+          transform: translate(-50%, -50%);
+          strong {
+            display: block;
+          }
+        }
+      }
+      .some-of-plan-info {
+        margin: 0;
+        padding-top: 4px;
+        > li {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          .general-label {
+            font: {
+              size: 13px;
+              weight: bold
+            }
+            margin-right: 9px;
+          }
+          .general-value-label {
+            font: {
+              size: 14px;
+              weight: bold
+            }
+          }
+        }
+      }
+      .absolute-icon {
+        width: 24px;
+        height: auto;
+        right: 12px;
+        top: 3px;
+        > img {
+          width: 100%
+        }
+      }
+    }
+  }
+  .single-today-plan-section {
+    position: relative;
+    .row {
+      >div {
+        display: flex;
+        align-items: center;
+        position: static;
+      }
+    }
+    .today-plan-info {
+      padding-left: 20px;
+      .main-icon {
+        >img {
+          width: 25px;
+          margin-bottom: 7px;
+        }
+      }
+      .today-plan-title {
+        a {
+          font: {
+            size: 16px;
+            weight: 500
+          }
+          color: $titleLightColor;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 9;
+          }
+        }
+      }
+    }
+    .today-plan-img {
+      padding: 10px;
+      > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  hr {
+    background: #262a3a;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
